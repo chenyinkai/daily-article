@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="box">
+  <view class="title">{{articleInfo.title}}</view>
+  <view class="author">{{articleInfo.author}}</view>
+  <view class="author">{{articleCurr}}</view>
+  <view class="content" wx:for="{{article.nodes}}">
+    <text>{{item.nodes[0].text}}</text>
+  </view>  
+  <view class="btnbox">
+    <button size="40" type="primary" bindtap="again" wx:if="{{btnShow}}">重新随机</button>
+  </view>
+</view>

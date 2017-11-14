@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <view class="article">
+      <button bindtap="bindViewTap" type="primary" size="default">每日一文</button>
+      <view class="art-info">
+        <icon type="info" size="20" color=""/>
+        <text>旨在每天和大家分享一篇美文。</text>
+      </view>
+    </view>
+    <view class="article">
+      <button bindtap="torandom" type="primary" size="default">随机美文</button>
+      <view class="art-info">
+        <icon type="info" size="20" color=""/>
+        <text>你可以看到随机某天的美文哦。</text>
+      </view>
+    </view>
+  </view>
+  <view class="warn">
+    <text>本小程序仅供学习使用，禁止商业行为。若被告知需停止共享与使用，本人会及时删除整个项目。</text>
+  </view>
+</view>

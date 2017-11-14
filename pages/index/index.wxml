@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="box">
+  <view class="title">{{articleInfo.title}}</view>
+  <view class="author">{{articleInfo.author}}</view>
+  <view class="author">{{articleCurr}}</view>
+  <view class="content" wx:for="{{article.nodes}}">
+    <text>{{item.nodes[0].text}}</text>
+  </view>  
+  <view class="btnbox">
+    <button size="40" type="default" wx:if="{{prevShow}}" bindtap="prev">上一篇</button>
+    <button size="40" type="primary" wx:if="{{nextShow}}" bindtap="next">下一篇</button> 
+  </view>
+</view>

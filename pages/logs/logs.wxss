@@ -1,0 +1,28 @@
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.title{
+  font-size: 50rpx;
+  font-weight: 600;
+  margin: 20rpx 0;
+}
+.author{
+  color: #666;
+  margin-bottom: 15rpx;
+}
+.content{
+  text-indent: 2em;
+  align-self: flex-start;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+.btnbox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15rpx;
+}
